@@ -1,6 +1,6 @@
 # AirHook: Simulating Multi-directional Wind Around Ears to Enhance Presence in VR
 
-This repository contains the Unity project for AirHook [1], an ear-worn airflow interface that renders multi-directional wind cues around the ears for VR.
+This repository contains the Unity project for AirHook [1], an ear-mounted wind display that renders multi-directional airflow around the ears for VR.
 
 [1] Yuxuan Sun, Tian Min, Liwei Chan, Takashi Amesaka, and Yuta Sugiura. 2026. AirHook: Simulating Multi-directional Wind Around Ears to Enhance Presence in VR. Proc. ACM Hum.-Comput. Interact. 10, 5, Article MHCI9716 (August 2026), 26 pages. https://doi.org/10.1145/3821687
 
