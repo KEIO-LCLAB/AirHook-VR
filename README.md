@@ -24,6 +24,9 @@ This repository contains the Unity project for AirHook [1], an ear-mounted wind 
 
 1. Open the project in Unity 2022.3.35f1.
 2. Import [Unity Terrain - URP Demo Scene](https://assetstore.unity.com/packages/3d/environments/unity-terrain-urp-demo-scene-213197) from the Unity Asset Store before running the scenes.
+3. Connect both boards and open `Arduino/PWM_control/PWM_control.ino` in Arduino IDE. Select each board's model and port, then upload with the header on line 14 set to `0x01` for the board that controls the left ear hook and `0x02` for the board that controls the right ear hook.
+4. In `Assets/Scripts/AirHook/AirHookPorts.cs`, set `Left` and `Right` to the corresponding ports shown under **Tools > Port** in Arduino IDE.
+5. Close Arduino Serial Monitor / Serial Plotter before entering Unity Play mode.
 
 ## License
 

@@ -11,7 +11,7 @@ void setup() {
 
 void loop() {
   if (Serial.available() >= 5) {  
-    if (Serial.read() == 0x01) {  // 1101 or COM3
+    if (Serial.read() == 0x01) {  // 0x01 -> left; 0x02 -> right
       for (int i = 0; i < 4; i++) {
         analogWrite(mosfetPins[i], Serial.read());
       }

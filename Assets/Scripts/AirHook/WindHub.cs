@@ -16,8 +16,8 @@ public class WindHub : MonoBehaviour
 
     public static WindHub Instance { get; private set; }
 
-    string portLeft = "COM3";
-    string portRight = "COM4";
+    string portLeft = AirHookPorts.Left;
+    string portRight = AirHookPorts.Right;
     int baud = 9600;
 
     float minSendInterval = 0.02f;

@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class CoasterWindSequence : MonoBehaviour
 {
-    string portLeft = "COM3";
-    string portRight = "COM4";
+    string portLeft = AirHookPorts.Left;
+    string portRight = AirHookPorts.Right;
     int baudRate = 9600;
 
     [Header("Wind Mode")]

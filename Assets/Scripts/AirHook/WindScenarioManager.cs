@@ -40,6 +40,9 @@ public class WindScenarioManager : MonoBehaviour
     SerialPort portL;
     SerialPort portR;
 
+    string portLeft = AirHookPorts.Left;
+    string portRight = AirHookPorts.Right;
+
     int[] currentLeft = new int[4];
     int[] currentRight = new int[4];
 
@@ -82,8 +85,8 @@ public class WindScenarioManager : MonoBehaviour
 
     void Start()
     {
-        portL = new SerialPort("COM3", 9600);
-        portR = new SerialPort("COM4", 9600);
+        portL = new SerialPort(portLeft, 9600);
+        portR = new SerialPort(portRight, 9600);
         portL.Open();
         portR.Open();
 
